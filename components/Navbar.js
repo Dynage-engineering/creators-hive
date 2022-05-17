@@ -35,7 +35,7 @@ export default function Navbar()
       <header>
           <nav className="nav">
               <Link href={'/'} >
-                  <Image src='/Logo1.svg' alt='Creators Hive' width={40 } height={40}/>
+                  <Image className='logo' src='/Lockup.svg' alt='Creators Hive' width={200 } height={40}/>
               </Link>
               <div className='nav__menu-bar' onClick={()=>setActive(!active)}>
                   <div></div>

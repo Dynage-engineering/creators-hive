@@ -13,7 +13,8 @@ export default function Home() {
           <br />
           Sign up now!</p>
         <Signup/>
-       </main>
+      </main>
+     
     </div>
   )
 }
