@@ -1,10 +1,6 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;700;900&display=swap');
+
+
 
 a {
   color: inherit;
@@ -13,4 +9,95 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #f2f2f2;
+}
+
+.nav__menu-bar{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  row-gap: 8px;
+}
+
+.nav__menu-bar div{
+background: #000;
+width: 30px;
+height: 4px;
+border-radius: 2px;
+}
+.nav__menu-list{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 70px;
+  row-gap: 1rem;
+  right: -300px;
+  padding: 1.5rem 1rem;
+  width: 300px;
+  min-height: calc(100vh - 60px);
+  background: #eee;
+  transition: all 0.3s ease-in-out;
+}
+.nav__menu-list.active{
+  right: 0;
+}
+
+.nav__link{
+  font-size: 18px;
+  transition: all 0.3s;
+  position: relative;
+}
+
+
+.nav__link::before{
+  content: '';
+ position: absolute;
+ left: 0;
+ bottom: -10px;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  transform: scaleX(0);
+  transition: all 0.3s;
+}
+
+.nav__link:hover{
+font-weight: bold;
+}
+
+.nav__link:hover::before{
+ width: 100%;
+}
+
+@media screen and (min-width: 768px){
+  .nav__menu-bar{
+    display: none;
+  }
+  .nav__menu-list{
+    display: flex;
+    flex-direction: row;
+    position: unset;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px ;
+    width: fit-content;
+column-gap: 1.5rem;
+  }
+
 }
