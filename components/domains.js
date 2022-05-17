@@ -35,7 +35,7 @@ export default function AllDomains() {
                   return (
                      
 
-                    <div className='domain' onClick={() => console.log(`${domain.to}`)}>
+                    <div key={index} className='domain' onClick={() => console.log(`${domain.to}`)}>
                     <div >
           
                     <Image src={`${domain.image}` } alt='Domain' width={300} height={320}/>
