@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import AllDomains from '../components/domains'
 import Signup from '../components/Signup'
 import styles from '../styles/Home.module.css'
 
@@ -12,7 +13,8 @@ export default function Home() {
           <br />
           <br />
           Sign up now!</p>
-        <Signup/>
+        <Signup />
+        <AllDomains/>
       </main>
      
     </div>
