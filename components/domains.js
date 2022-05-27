@@ -51,18 +51,20 @@ export default function AllDomains() {
           </div>
           <style jsx>{`
             .allDomains{
-            margin-top: 2rem;
-          display: flex;
-          flex-direction: column;
-            align-items: center;
-            justify-content: center;
-          width: 100vw;
-          padding-top: 2rem;
+                margin-top: 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-top: 2rem;
             }
             .allDomains h1{
-            color: #18CA87;
-            text-align: center;
-            margin-bottom: 2rem;
+                color: #18CA87;
+                text-align: center;
+                margin: 0;
+                margin-bottom: 2rem;
+                margin-top: 2rem;
+            
             }
             .container{
                 display: flex;
@@ -81,7 +83,7 @@ export default function AllDomains() {
                 cursor: pointer;
             }
             .domain:hover{
-    box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+                box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
             }
             .text {
                 font-size: 1.2rem;
